@@ -13,8 +13,9 @@ No arquivo **_docker-compose.yaml_** você pode editar as configurações confor
 Por exemplo alterar o parâmetro "*container_name*" e "*ports*";
 
 ```
+proxy-customer:
     build: .
-    container_name: proxy-customer-1
+    container_name: proxy-customer
     ports:
         - "80:1521"
     restart: always
