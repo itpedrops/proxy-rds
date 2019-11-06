@@ -1,4 +1,5 @@
-    build: .
+proxy-customer:
+   build: .
     container_name: proxy-customer-1
     ports:
         - "80:1521"
