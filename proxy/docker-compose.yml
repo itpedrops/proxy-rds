@@ -1,6 +1,6 @@
-proxy-customer:
-   build: .
-    container_name: proxy-customer
+novocliente:
+    build: .
+    container_name: novocliente
     ports:
         - "80:1521"
     restart: always
