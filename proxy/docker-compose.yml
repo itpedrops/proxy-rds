@@ -1,0 +1,10 @@
+    build: .
+    container_name: proxy-customer-1
+    ports:
+        - "80:1521"
+    restart: always
+    volumes:
+        - .:/home
+    environment:
+        - DATABASE_HOST=$DATABASE_HOST
+        - DATABASE_PORT=$DATABASE_PORT
